@@ -1,0 +1,58 @@
+[
+  {
+    "id": "1",
+    "type": "一般計程車",
+    "basePrice": 85,
+    "pricePerKm": 20,
+    "estimatedArrival": 3,
+    "rating": 4.8,
+    "driverName": "王師傅",
+    "licensePlate": "ABC-1234",
+    "available": true,
+    "phone": "0912-345-678",
+    "carModel": "Toyota Camry",
+    "features": ["冷氣", "GPS導航", "行車記錄器"]
+  },
+  {
+    "id": "2",
+    "type": "豪華計程車",
+    "basePrice": 120,
+    "pricePerKm": 25,
+    "estimatedArrival": 5,
+    "rating": 4.9,
+    "driverName": "李師傅",
+    "licensePlate": "DEF-5678",
+    "available": true,
+    "phone": "0923-456-789",
+    "carModel": "Mercedes-Benz E-Class",
+    "features": ["真皮座椅", "Wi-Fi", "礦泉水", "充電器"]
+  },
+  {
+    "id": "3",
+    "type": "無障礙計程車",
+    "basePrice": 85,
+    "pricePerKm": 20,
+    "estimatedArrival": 8,
+    "rating": 4.7,
+    "driverName": "陳師傅",
+    "licensePlate": "GHI-9012",
+    "available": true,
+    "phone": "0934-567-890",
+    "carModel": "Toyota Sienta",
+    "features": ["輪椅升降設備", "無障礙空間", "安全帶固定"]
+  },
+  {
+    "id": "4",
+    "type": "電動計程車",
+    "basePrice": 85,
+    "pricePerKm": 18,
+    "estimatedArrival": 6,
+    "rating": 4.6,
+    "driverName": "張師傅",
+    "licensePlate": "JKL-3456",
+    "available": false,
+    "phone": "0945-678-901",
+    "carModel": "Tesla Model 3",
+    "features": ["零排放", "靜音行駛", "快速充電"]
+  }
+]
