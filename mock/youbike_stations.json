@@ -1,0 +1,80 @@
+[
+  {
+    "id": "1",
+    "name": "金山區公所站",
+    "address": "新北市金山區中正路17號前",
+    "totalSpaces": 20,
+    "availableBikes": 12,
+    "availableSpaces": 8,
+    "status": "active",
+    "distance": 0.1,
+    "lastUpdate": "2分鐘前",
+    "coordinates": { "lat": 25.2285, "lng": 121.6369 },
+    "features": ["24小時營運", "信用卡租借", "維修站"]
+  },
+  {
+    "id": "2",
+    "name": "金山老街站",
+    "address": "新北市金山區金包里街108號前",
+    "totalSpaces": 15,
+    "availableBikes": 3,
+    "availableSpaces": 12,
+    "status": "active",
+    "distance": 0.3,
+    "lastUpdate": "1分鐘前",
+    "coordinates": { "lat": 25.2298, "lng": 121.6385 },
+    "features": ["觀光熱點", "24小時營運"]
+  },
+  {
+    "id": "3",
+    "name": "朱銘美術館站",
+    "address": "新北市金山區西勢湖2號前",
+    "totalSpaces": 25,
+    "availableBikes": 18,
+    "availableSpaces": 7,
+    "status": "active",
+    "distance": 2.1,
+    "lastUpdate": "3分鐘前",
+    "coordinates": { "lat": 25.2156, "lng": 121.6289 },
+    "features": ["景點站", "大型站點", "維修站"]
+  },
+  {
+    "id": "4",
+    "name": "金山青年活動中心站",
+    "address": "新北市金山區青年路1號前",
+    "totalSpaces": 30,
+    "availableBikes": 0,
+    "availableSpaces": 30,
+    "status": "empty",
+    "distance": 0.8,
+    "lastUpdate": "5分鐘前",
+    "coordinates": { "lat": 25.2245, "lng": 121.6412 },
+    "features": ["大型站點", "24小時營運"]
+  },
+  {
+    "id": "5",
+    "name": "野柳地質公園站",
+    "address": "新北市萬里區野柳里港東路167-1號前",
+    "totalSpaces": 20,
+    "availableBikes": 20,
+    "availableSpaces": 0,
+    "status": "full",
+    "distance": 5.2,
+    "lastUpdate": "1分鐘前",
+    "coordinates": { "lat": 25.2017, "lng": 121.6893 },
+    "features": ["觀光熱點", "景點站"]
+  },
+  {
+    "id": "6",
+    "name": "金山海水浴場站",
+    "address": "新北市金山區民生路166號前",
+    "totalSpaces": 18,
+    "availableBikes": 8,
+    "availableSpaces": 10,
+    "status": "maintenance",
+    "distance": 1.5,
+    "lastUpdate": "10分鐘前",
+    "coordinates": { "lat": 25.2198, "lng": 121.6445 },
+    "features": ["海濱站點", "季節性熱點"]
+  }
+]

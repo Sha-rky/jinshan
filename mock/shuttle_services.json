@@ -1,0 +1,50 @@
+[
+  {
+    "id": "1",
+    "type": "elderly_care",
+    "name": "長照接駁服務",
+    "description": "專業長照接駁，提供輪椅友善車輛與照護人員陪同",
+    "priceRange": "$150-300",
+    "availability": "available",
+    "features": ["輪椅升降", "專業照護", "醫療設備", "24小時服務"],
+    "basePrice": 250,
+    "perKmPrice": 15,
+    "waitingFee": 50
+  },
+  {
+    "id": "2",
+    "type": "medical",
+    "name": "就醫接送",
+    "description": "醫院診所接送，協助掛號就診與藥品代領",
+    "priceRange": "$200-400",
+    "availability": "available",
+    "features": ["醫院熟悉", "掛號協助", "陪同就診", "藥品代領"],
+    "basePrice": 300,
+    "perKmPrice": 20,
+    "waitingFee": 80
+  },
+  {
+    "id": "3",
+    "type": "shared_ride",
+    "name": "共享接駁",
+    "description": "多人共乘，經濟實惠的接駁選擇",
+    "priceRange": "$80-150",
+    "availability": "limited",
+    "features": ["多人共乘", "固定路線", "經濟實惠", "環保出行"],
+    "basePrice": 100,
+    "perKmPrice": 8,
+    "waitingFee": 20
+  },
+  {
+    "id": "4",
+    "type": "shopping",
+    "name": "購物接送",
+    "description": "市場超市接送，協助搬運購物物品",
+    "priceRange": "$120-250",
+    "availability": "available",
+    "features": ["購物協助", "搬運服務", "等候時間", "多點接送"],
+    "basePrice": 180,
+    "perKmPrice": 12,
+    "waitingFee": 40
+  }
+]

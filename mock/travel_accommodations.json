@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1",
+    "name": "金山海景溫泉會館",
+    "type": "resort",
+    "description": "面海溫泉度假村，享受海景與溫泉的雙重療癒",
+    "location": "新北市金山區",
+    "rating": 4.6,
+    "reviewCount": 456,
+    "pricePerNight": 3800,
+    "images": ["/placeholder.svg?height=300&width=400&text=海景溫泉會館"],
+    "amenities": ["溫泉", "海景", "餐廳", "停車場", "WiFi", "健身房"],
+    "roomTypes": ["海景雙人房", "溫泉套房", "家庭房"],
+    "coordinates": { "lat": 25.2245, "lng": 121.6412 },
+    "checkIn": "15:00",
+    "checkOut": "11:00",
+    "policies": ["禁菸", "可攜帶寵物", "免費取消"],
+    "nearbyAttractions": ["金山海水浴場", "金山老街"]
+  },
+  {
+    "id": "2",
+    "name": "金山青年活動中心",
+    "type": "hostel",
+    "description": "經濟實惠的住宿選擇，適合團體旅遊",
+    "location": "新北市金山區",
+    "rating": 4.1,
+    "reviewCount": 234,
+    "pricePerNight": 1200,
+    "images": ["/placeholder.svg?height=300&width=400&text=青年活動中心"],
+    "amenities": ["餐廳", "會議室", "停車場", "WiFi", "活動空間"],
+    "roomTypes": ["雙人房", "四人房", "團體房"],
+    "coordinates": { "lat": 25.2245, "lng": 121.6412 },
+    "checkIn": "15:00",
+    "checkOut": "10:00",
+    "policies": ["禁菸", "團體優惠", "學生優惠"],
+    "nearbyAttractions": ["朱銘美術館", "金山老街"]
+  }
+]

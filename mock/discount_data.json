@@ -1,0 +1,78 @@
+[
+  {
+    "id": "1",
+    "title": "居民專屬公車優惠",
+    "category": "transport",
+    "description": "金山萬里居民搭乘公車享有5折優惠",
+    "discountType": "percentage",
+    "discountValue": 50,
+    "originalPrice": 45,
+    "finalPrice": 23,
+    "merchant": {
+      "name": "新北市公車",
+      "location": "金山區各站點",
+      "rating": 4.2,
+      "image": "/placeholder.svg?height=100&width=100&text=公車",
+      "phone": "02-2960-3456",
+      "address": "新北市金山區中正路17號",
+      "businessHours": "05:30-23:00"
+    },
+    "validUntil": "2024-12-31",
+    "usageLimit": 100,
+    "usedCount": 23,
+    "requirements": ["需出示居民證明", "限平日使用"],
+    "tags": ["居民專屬", "交通", "熱門"],
+    "isExclusive": true,
+    "isPopular": true
+  },
+  {
+    "id": "2",
+    "title": "金山老街美食券",
+    "category": "food",
+    "description": "老街指定店家消費滿200元折50元",
+    "discountType": "fixed",
+    "discountValue": 50,
+    "merchant": {
+      "name": "金山老街商圈",
+      "location": "金山老街",
+      "rating": 4.5,
+      "image": "/placeholder.svg?height=100&width=100&text=老街",
+      "phone": "02-2498-8888",
+      "address": "新北市金山區金包里街",
+      "businessHours": "09:00-21:00"
+    },
+    "validUntil": "2024-06-30",
+    "usageLimit": 50,
+    "usedCount": 12,
+    "requirements": ["消費滿200元", "限指定店家"],
+    "tags": ["美食", "老街", "限時"],
+    "isExclusive": false,
+    "isPopular": true
+  },
+  {
+    "id": "3",
+    "title": "YouBike前30分鐘免費",
+    "category": "transport",
+    "description": "金山居民使用YouBike前30分鐘完全免費",
+    "discountType": "fixed",
+    "discountValue": 10,
+    "originalPrice": 10,
+    "finalPrice": 0,
+    "merchant": {
+      "name": "YouBike",
+      "location": "金山區各站點",
+      "rating": 4.3,
+      "image": "/placeholder.svg?height=100&width=100&text=YouBike",
+      "phone": "02-8978-8888",
+      "address": "金山區各YouBike站點",
+      "businessHours": "24小時"
+    },
+    "validUntil": "2024-12-31",
+    "usageLimit": 200,
+    "usedCount": 45,
+    "requirements": ["需綁定居民身分", "每日限用3次"],
+    "tags": ["居民專屬", "單車", "環保"],
+    "isExclusive": true,
+    "isPopular": false
+  }
+]

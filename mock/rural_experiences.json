@@ -1,0 +1,98 @@
+[
+  {
+    "id": "1",
+    "title": "有機農場體驗 - 季節蔬菜種植",
+    "category": "farming",
+    "description": "親手體驗有機農法，從播種到收成，學習永續農業的精神",
+    "location": "金山有機農場",
+    "duration": 240,
+    "price": 800,
+    "rating": 4.8,
+    "reviewCount": 156,
+    "maxParticipants": 12,
+    "difficulty": "easy",
+    "images": ["/placeholder.svg?height=300&width=400&text=有機農場"],
+    "highlights": ["親手種植蔬菜", "學習有機農法", "品嚐新鮮蔬果", "農場導覽"],
+    "includes": ["專業指導", "農具使用", "午餐", "農產品伴手禮"],
+    "schedule": [
+      "09:00 - 農場集合與介紹",
+      "09:30 - 有機農法講解",
+      "10:00 - 實際種植體驗",
+      "12:00 - 農場午餐",
+      "13:00 - 收成體驗",
+      "13:30 - 結束與伴手禮"
+    ],
+    "host": {
+      "name": "陳農夫",
+      "avatar": "/placeholder-user.jpg",
+      "experience": 15,
+      "specialty": "有機農業專家"
+    },
+    "availableDates": ["2024-01-20", "2024-01-21", "2024-01-27", "2024-01-28"],
+    "tags": ["有機", "親子友善", "教育體驗"]
+  },
+  {
+    "id": "2",
+    "title": "傳統陶藝工坊 - 手拉坯體驗",
+    "category": "craft",
+    "description": "學習傳統陶藝技法，親手製作獨一無二的陶瓷作品",
+    "location": "金山陶藝工作室",
+    "duration": 180,
+    "price": 1200,
+    "rating": 4.9,
+    "reviewCount": 89,
+    "maxParticipants": 8,
+    "difficulty": "medium",
+    "images": ["/placeholder.svg?height=300&width=400&text=陶藝工坊"],
+    "highlights": ["手拉坯技法", "釉藥調配", "燒製過程", "作品帶回"],
+    "includes": ["材料費", "工具使用", "專業指導", "作品燒製"],
+    "schedule": [
+      "14:00 - 工坊介紹",
+      "14:30 - 陶土準備",
+      "15:00 - 手拉坯教學",
+      "16:00 - 作品修整",
+      "16:30 - 釉藥上色",
+      "17:00 - 結束"
+    ],
+    "host": {
+      "name": "李師傅",
+      "avatar": "/placeholder-user.jpg",
+      "experience": 25,
+      "specialty": "傳統陶藝大師"
+    },
+    "availableDates": ["2024-01-19", "2024-01-26", "2024-02-02", "2024-02-09"],
+    "tags": ["手作", "藝術", "傳統工藝"]
+  },
+  {
+    "id": "3",
+    "title": "金山老街文化巡禮",
+    "category": "culture",
+    "description": "深度探索金山老街的歷史文化，品嚐在地美食",
+    "location": "金山老街",
+    "duration": 150,
+    "price": 600,
+    "rating": 4.6,
+    "reviewCount": 234,
+    "maxParticipants": 20,
+    "difficulty": "easy",
+    "images": ["/placeholder.svg?height=300&width=400&text=金山老街"],
+    "highlights": ["歷史建築導覽", "在地美食品嚐", "文化故事分享", "拍照打卡"],
+    "includes": ["專業導覽", "美食試吃", "文化手冊", "紀念品"],
+    "schedule": [
+      "10:00 - 老街入口集合",
+      "10:15 - 歷史建築介紹",
+      "11:00 - 傳統店家參訪",
+      "11:30 - 美食品嚐",
+      "12:00 - 文化故事時間",
+      "12:30 - 結束"
+    ],
+    "host": {
+      "name": "王導覽員",
+      "avatar": "/placeholder-user.jpg",
+      "experience": 8,
+      "specialty": "在地文史工作者"
+    },
+    "availableDates": ["2024-01-20", "2024-01-21", "2024-01-22", "2024-01-23"],
+    "tags": ["文化", "美食", "導覽", "攝影"]
+  }
+]
