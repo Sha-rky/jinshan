@@ -1,0 +1,294 @@
+{
+  "packages": [
+    {
+      "id": "1",
+      "trackingNumber": "TW2024010001",
+      "recipient": "王小明",
+      "destination": "台北市信義區信義路五段7號",
+      "currentLocation": "台北轉運中心",
+      "status": "運送中",
+      "estimatedDelivery": "2024-01-15 14:00",
+      "lastUpdate": "2024-01-15 10:30",
+      "progress": 75,
+      "origin": "金山區公所",
+      "driver": "張大明",
+      "vehicle": "ABC-1234",
+      "timeline": [
+        {
+          "timestamp": "2024-01-08 09:00",
+          "status": "已取件",
+          "location": "金山區公所",
+          "description": "包裹已從寄件地點取件"
+        },
+        {
+          "timestamp": "2024-01-08 10:30",
+          "status": "運輸中",
+          "location": "金山區中山路",
+          "description": "包裹正在配送途中"
+        },
+        {
+          "timestamp": "2024-01-15 11:30:00",
+          "status": "已送達",
+          "location": "金山區中山路100號",
+          "description": "收件人已簽收，配送完成"
+        }
+      ],
+      "sender": "金山農會",
+      "weight": 2.5,
+      "dimensions": "30x20x15cm"
+    },
+    {
+      "id": "2",
+      "trackingNumber": "TW2024010002",
+      "recipient": "李美華",
+      "destination": "新北市板橋區中山路一段161號",
+      "currentLocation": "板橋配送站",
+      "status": "配送中",
+      "estimatedDelivery": "2024-01-15 16:00",
+      "lastUpdate": "2024-01-15 11:15",
+      "progress": 90,
+      "origin": "金山區溫泉會館",
+      "sender": "金山溫泉會館",
+      "weight": 1.2,
+      "dimensions": "25x15x10cm"
+    },
+    {
+      "id": "3",
+      "trackingNumber": "TW2024010003",
+      "recipient": "張志強",
+      "destination": "桃園市中壢區中正路100號",
+      "currentLocation": "已送達",
+      "status": "已送達",
+      "estimatedDelivery": "2024-01-15 12:00",
+      "lastUpdate": "2024-01-15 11:45",
+      "progress": 100
+    },
+    {
+      "id": "4",
+      "trackingNumber": "TW2024010004",
+      "recipient": "陳淑芬",
+      "destination": "台中市西屯區台灣大道三段99號",
+      "currentLocation": "台中轉運中心",
+      "status": "已取件",
+      "estimatedDelivery": "2024-01-16 10:00",
+      "lastUpdate": "2024-01-15 09:00",
+      "progress": 25
+    },
+    {
+      "id": "5",
+      "trackingNumber": "TW2024010005",
+      "recipient": "林建宏",
+      "destination": "高雄市前金區中正四路211號",
+      "currentLocation": "運送途中發生異常",
+      "status": "異常",
+      "estimatedDelivery": "2024-01-16 15:00",
+      "lastUpdate": "2024-01-15 08:30",
+      "progress": 50
+    }
+  ],
+  "vehicles": [
+    {
+      "id": "1",
+      "plateNumber": "ABC-1234",
+      "type": "truck",
+      "driver": {
+        "name": "張大明",
+        "phone": "0912-345-678",
+        "rating": 4.8
+      },
+      "status": "active",
+      "currentLocation": {
+        "address": "金山區中山路100號",
+        "coordinates": [25.2232, 121.6414]
+      },
+      "route": {
+        "origin": "金山",
+        "destination": "淡水",
+        "progress": 65,
+        "estimatedArrival": "2024-01-15 17:30"
+      },
+      "packages": 8,
+      "fuelLevel": 75,
+      "speed": 35,
+      "lastUpdate": "2024-01-15 11:30"
+    },
+    {
+      "id": "V001",
+      "vehicleNumber": "貨車-001",
+      "driver": "劉司機",
+      "status": "配送中",
+      "currentLocation": "台北市信義區",
+      "lastUpdate": "2024-01-15 11:30",
+      "fuelLevel": 75,
+      "loadCapacity": 80,
+      "route": "信義區 → 大安區 → 中正區"
+    },
+    {
+      "id": "V002",
+      "vehicleNumber": "貨車-002",
+      "driver": "陳司機",
+      "status": "待命",
+      "currentLocation": "板橋配送中心",
+      "lastUpdate": "2024-01-15 11:00",
+      "fuelLevel": 90,
+      "loadCapacity": 0,
+      "route": null
+    },
+    {
+      "id": "V003",
+      "vehicleNumber": "貨車-003",
+      "driver": "王司機",
+      "status": "配送中",
+      "currentLocation": "桃園市中壢區",
+      "lastUpdate": "2024-01-15 11:45",
+      "fuelLevel": 60,
+      "loadCapacity": 65,
+      "route": "中壢區 → 平鎮區 → 龍潭區"
+    },
+    {
+      "id": "V004",
+      "vehicleNumber": "貨車-004",
+      "driver": "李司機",
+      "status": "維修中",
+      "currentLocation": "維修廠",
+      "lastUpdate": "2024-01-15 09:00",
+      "fuelLevel": 30,
+      "loadCapacity": 0,
+      "route": null
+    },
+    {
+      "id": "V005",
+      "vehicleNumber": "貨車-005",
+      "driver": "張司機",
+      "status": "休息",
+      "currentLocation": "台中轉運中心",
+      "lastUpdate": "2024-01-15 10:00",
+      "fuelLevel": 85,
+      "loadCapacity": 0,
+      "route": null
+    }
+  ],
+  "trackingHistory": [
+    {
+      "id": "1",
+      "trackingNumber": "JIN2024001",
+      "type": "package",
+      "status": "completed",
+      "startTime": "2024-01-08 09:00",
+      "endTime": "2024-01-08 11:45",
+      "duration": "2小時45分鐘",
+      "origin": "金山區公所",
+      "destination": "金山老街45號",
+      "driver": "李司機",
+      "vehicle": "金山001",
+      "recipient": "王小明",
+      "events": [
+        {
+          "timestamp": "2024-01-08 09:00",
+          "event": "包裹取件",
+          "location": "金山區公所",
+          "description": "包裹已從寄件地點成功取件",
+          "status": "success"
+        },
+        {
+          "timestamp": "2024-01-08 09:30",
+          "event": "開始配送",
+          "location": "金山區中山路",
+          "description": "配送車輛已出發前往目的地",
+          "status": "info"
+        },
+        {
+          "timestamp": "2024-01-08 11:45",
+          "event": "配送完成",
+          "location": "金山老街45號",
+          "description": "包裹已成功送達收件人",
+          "status": "success"
+        }
+      ]
+    },
+    {
+      "id": "H001",
+      "trackingNumber": "TW2024010001",
+      "event": "包裹已取件",
+      "description": "包裹已從寄件地點取件，準備運送",
+      "type": "pickup",
+      "date": "2024-01-15",
+      "time": "08:30",
+      "location": "台北市大安區",
+      "details": {
+        "操作員": "張取件員",
+        "重量": "2.5kg",
+        "尺寸": "30x20x15cm"
+      }
+    },
+    {
+      "id": "H002",
+      "trackingNumber": "TW2024010001",
+      "event": "到達轉運中心",
+      "description": "包裹已到達台北轉運中心，正在分揀",
+      "type": "transit",
+      "date": "2024-01-15",
+      "time": "09:15",
+      "location": "台北轉運中心",
+      "details": {
+        "分揀員": "李分揀員",
+        "下一站": "信義配送站"
+      }
+    },
+    {
+      "id": "H003",
+      "trackingNumber": "TW2024010001",
+      "event": "開始配送",
+      "description": "包裹已裝車，開始最後一哩配送",
+      "type": "delivery",
+      "date": "2024-01-15",
+      "time": "10:30",
+      "location": "信義配送站",
+      "details": {
+        "配送員": "劉配送員",
+        "預計送達": "14:00"
+      }
+    },
+    {
+      "id": "H004",
+      "trackingNumber": "TW2024010002",
+      "event": "包裹已送達",
+      "description": "包裹已成功送達收件人",
+      "type": "delivery",
+      "date": "2024-01-15",
+      "time": "11:45",
+      "location": "新北市板橋區",
+      "details": {
+        "簽收人": "李美華",
+        "配送員": "陳配送員"
+      }
+    },
+    {
+      "id": "H005",
+      "trackingNumber": "TW2024010005",
+      "event": "配送異常",
+      "description": "因收件人不在，包裹暫存於便利商店",
+      "type": "exception",
+      "date": "2024-01-15",
+      "time": "08:30",
+      "location": "高雄市前金區",
+      "details": {
+        "異常原因": "收件人不在",
+        "暫存地點": "7-11中正店",
+        "聯絡電話": "07-1234567"
+      }
+    }
+  ],
+  "trackingEvents": [
+    {
+      "id": "1",
+      "trackingNumber": "JIN2024001",
+      "timestamp": "2024-01-15 11:30:00",
+      "event": "包裹已送達",
+      "location": "金山區中山路100號",
+      "status": "success",
+      "details": "收件人已簽收，配送完成",
+      "operator": "張大明"
+    }
+  ]
+}
