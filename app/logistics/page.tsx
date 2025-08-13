@@ -1,14 +1,10 @@
 "use client"
-
-import { useState } from "react"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { PackageTracker } from "./components/package-tracker"
 import { VehicleTracker } from "./components/vehicle-tracker"
 import { DeliveryMap } from "./components/delivery-map"
 import { TrackingHistory } from "./components/tracking-history"
-import { NotificationSettings } from "./components/notification-settings"
-import { Package, Truck, Map, History, Settings } from 'lucide-react'
+import { Package, Truck, Map, History } from "lucide-react"
 
 export default function LogisticsPage() {
   return (
@@ -22,7 +18,7 @@ export default function LogisticsPage() {
       </div>
 
       <Tabs defaultValue="packages" className="space-y-4">
-        <TabsList className="grid w-full grid-cols-5">
+        <TabsList className="grid w-full grid-cols-4">
           <TabsTrigger value="packages" className="flex items-center gap-2">
             <Package className="h-4 w-4" />
             包裹追蹤
@@ -38,10 +34,6 @@ export default function LogisticsPage() {
           <TabsTrigger value="history" className="flex items-center gap-2">
             <History className="h-4 w-4" />
             追蹤歷史
-          </TabsTrigger>
-          <TabsTrigger value="settings" className="flex items-center gap-2">
-            <Settings className="h-4 w-4" />
-            通知設定
           </TabsTrigger>
         </TabsList>
 
@@ -59,10 +51,6 @@ export default function LogisticsPage() {
 
         <TabsContent value="history">
           <TrackingHistory />
-        </TabsContent>
-
-        <TabsContent value="settings">
-          <NotificationSettings />
         </TabsContent>
       </Tabs>
     </div>
