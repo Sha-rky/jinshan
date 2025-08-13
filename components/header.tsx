@@ -1,11 +1,8 @@
 "use client"
 
+import { Bell } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { ModeToggle } from "@/components/mode-toggle"
-import { Bell } from 'lucide-react'
-import { MobileNav } from "@/components/mobile-nav"
-import { SiteLogo } from "@/components/site-logo"
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -14,84 +11,65 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
-
-const demoNotifications = [
-  { id: 1, title: "行程提醒", desc: "您的接駁車將於 10 分鐘後抵達。" },
-  { id: 2, title: "優惠通知", desc: "在地優惠新折扣，立即查看！" },
-  { id: 3, title: "系統訊息", desc: "YouBike 站點車位已滿，建議改至鄰近站點。" },
-]
+import { MobileNav } from "./mobile-nav"
+import { ModeToggle } from "./mode-toggle"
+import { SiteLogo } from "./site-logo"
 
 export function Header() {
-  const unreadCount = demoNotifications.length
+  const notifications = [
+    { id: 1, title: "公車 R66 即將到站", time: "2分鐘前" },
+    { id: 2, title: "您的低碳點數已更新", time: "1小時前" },
+    { id: 3, title: "農村體驗預約確認", time: "3小時前" },
+  ]
 
   return (
-    <header className="sticky top-0 z-40 border-b bg-background/75 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="flex h-14 items-center gap-2 px-3 md:px-6">
-        <div className="md:hidden">
+    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <div className="container flex h-14 items-center">
+        <div className="mr-4 flex md:hidden">
           <MobileNav />
         </div>
 
-        <div className="hidden md:block">
+        <div className="mr-4 hidden md:flex">
           <SiteLogo />
         </div>
 
-        <div className="ml-auto flex items-center gap-1">
-          {/* Notification button (clickable) */}
-          <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <Button
-                variant="ghost"
-                size="icon"
-                className="relative"
-                aria-label="通知"
-              >
-                <Bell className="h-4 w-4" />
-                {unreadCount > 0 && (
-                  <Badge
-                    className="absolute -top-1 -right-1 h-5 w-5 rounded-full text-[10px] bg-green-600 text-white border-0 shadow-sm ring-2 ring-background flex items-center justify-center"
-                    aria-label={`未讀通知 ${unreadCount} 則`}
-                  >
-                    {unreadCount}
-                  </Badge>
-                )}
-                <span className="sr-only">通知</span>
-              </Button>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent
-              align="end"
-              className="w-80"
-              aria-label="通知列表"
-            >
-              <DropdownMenuLabel className="flex items-center justify-between">
-                <span>通知</span>
-                {unreadCount > 0 && (
-                  <span className="text-xs text-muted-foreground">
-                    共 {unreadCount} 則
-                  </span>
-                )}
-              </DropdownMenuLabel>
-              <DropdownMenuSeparator />
-              {demoNotifications.map((n) => (
-                <DropdownMenuItem
-                  key={n.id}
-                  className="flex flex-col items-start gap-0.5 py-2"
-                >
-                  <span className="text-sm font-medium">{n.title}</span>
-                  <span className="text-xs text-muted-foreground">
-                    {n.desc}
-                  </span>
-                </DropdownMenuItem>
-              ))}
-              {demoNotifications.length === 0 && (
-                <DropdownMenuItem disabled className="text-muted-foreground">
-                  目前沒有新的通知
-                </DropdownMenuItem>
-              )}
-            </DropdownMenuContent>
-          </DropdownMenu>
+        <div className="flex flex-1 items-center justify-between space-x-2 md:justify-end">
+          <div className="w-full flex-1 md:w-auto md:flex-none">
+            <div className="md:hidden">
+              <SiteLogo />
+            </div>
+          </div>
 
-          {/* Theme toggle remains */}
-          <ModeToggle />
+          <nav className="flex items-center space-x-2">
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button variant="ghost" size="icon" className="relative">
+                  <Bell className="h-5 w-5" />
+                  <Badge
+                    variant="destructive"
+                    className="absolute -top-1 -right-1 h-5 w-5 rounded-full p-0 flex items-center justify-center text-xs font-medium bg-green-500 hover:bg-green-600 min-w-[20px]"
+                  >
+                    {notifications.length}
+                  </Badge>
+                  <span className="sr-only">通知</span>
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="end" className="w-80">
+                <DropdownMenuLabel>通知</DropdownMenuLabel>
+                <DropdownMenuSeparator />
+                {notifications.map((notification) => (
+                  <DropdownMenuItem key={notification.id} className="flex flex-col items-start p-3">
+                    <div className="font-medium">{notification.title}</div>
+                    <div className="text-sm text-muted-foreground">{notification.time}</div>
+                  </DropdownMenuItem>
+                ))}
+                <DropdownMenuSeparator />
+                <DropdownMenuItem className="text-center">查看所有通知</DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
+
+            <ModeToggle />
+          </nav>
         </div>
       </div>
     </header>
